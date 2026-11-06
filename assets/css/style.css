@@ -145,7 +145,7 @@ a{ color:inherit; }
 .hero-role{ max-width:34ch; font-size:1.1rem; color:var(--ink-60); }
 .hero-actions{ display:flex; gap:14px; flex-wrap:wrap; }
 
-.hero-portrait{
+.hero .hero-portrait{
   position:absolute; right:var(--gutter); top:50%;
   translate:0 -50%;
   width:clamp(220px, 23vw, 360px); aspect-ratio:4/5;
@@ -410,8 +410,8 @@ a{ color:inherit; }
   .nav-toggle[aria-expanded="true"] .nav-toggle-line:last-child{ transform:translateY(-4px) rotate(-45deg); }
 
   .hero{ min-height:auto; padding-top:48px; }
-  .hero-portrait{
-    position:static; translate:none; width:100%;
+  .hero .hero-portrait{
+    position:relative; right:auto; top:auto; translate:none; width:100%;
     margin-top:36px; opacity:1; z-index:0; aspect-ratio:4/5;
   }
   .hero-foot{ flex-direction:column; align-items:flex-start; }

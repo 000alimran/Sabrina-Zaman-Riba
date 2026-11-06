@@ -5,6 +5,7 @@
    ───────────────────────────────────────────────────────────── */
 
 :root{
+  color-scheme: light; /* single deliberate print-light theme */
   --paper:   #FBFAF7;
   --paper-2: #F3F1EA;
   --ink:     #17140F;

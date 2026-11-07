@@ -22,19 +22,24 @@ const filters = document.querySelectorAll('.filter');
 const items = document.querySelectorAll('.work-item');
 const empty = document.getElementById('workEmpty');
 
-filters.forEach((btn) => {
-  btn.addEventListener('click', () => {
-    filters.forEach((b) => b.classList.remove('is-active'));
-    btn.classList.add('is-active');
-    const cat = btn.dataset.filter;
-    let shown = 0;
-    items.forEach((item) => {
-      const show = cat === 'all' || item.dataset.cat === cat;
-      item.hidden = !show;
-      if (show) shown++;
-    });
-    empty.hidden = shown > 0;
+function applyFilter(cat) {
+  filters.forEach((b) => b.classList.toggle('is-active', b.dataset.filter === cat));
+  let shown = 0;
+  items.forEach((item) => {
+    const show = cat === 'all' || item.dataset.cat === cat;
+    item.hidden = !show;
+    if (show) shown++;
   });
+  empty.hidden = shown > 0;
+}
+
+filters.forEach((btn) => {
+  btn.addEventListener('click', () => applyFilter(btn.dataset.filter));
+});
+
+// Hero category tiles pre-filter the work grid
+document.querySelectorAll('[data-cat-link]').forEach((tile) => {
+  tile.addEventListener('click', () => applyFilter(tile.dataset.catLink));
 });
 
 // Booking form → opens mail app with a composed enquiry

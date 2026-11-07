@@ -20,7 +20,7 @@
   --smoke:   #DCD7CC;
 
   --font-sans: "Hanken Grotesk", system-ui, sans-serif;
-  --font-serif: "Bodoni Moda", "Didot", serif;
+  --font-serif: "Libre Caslon Condensed", "Didot", serif;
   --font-bn: "Tiro Bangla", serif;
 
   --gutter: clamp(20px, 5vw, 76px);
@@ -63,7 +63,7 @@ a{ color:inherit; }
 
 /* italic-serif accent — the signature type move */
 em{
-  font-family:var(--font-serif); font-style:italic; font-weight:400;
+  font-family:var(--font-serif); font-style:italic; font-weight:500;
   color:var(--crimson); letter-spacing:.01em;
 }
 
@@ -146,12 +146,12 @@ em{
   display:grid; justify-items:center; text-align:center;
 }
 .hero-name{
-  font-weight:600; letter-spacing:-.03em; line-height:1.02;
-  font-size:clamp(2.9rem, 8.4vw, 7rem);
+  font-weight:600; letter-spacing:-.03em; line-height:.9;
+  font-size:clamp(3rem, 11vw, 11rem);
   margin-top:clamp(20px, 3vh, 34px);
   text-wrap:balance;
 }
-.hero-name em{ font-weight:400; letter-spacing:0; }
+.hero-name em{ font-weight:500; letter-spacing:0; }
 .hero-dot{ color:var(--crimson); }
 .hero-role{
   margin-top:clamp(18px, 3vh, 28px);
@@ -230,6 +230,9 @@ em{
 }
 
 /* ── Real images in frames ──────────────────────────────── */
+.hero-card, .work-frame, .about-portrait, .story-img{
+  position:relative; overflow:hidden; border-radius:var(--r-card);
+}
 .hero-card img, .work-frame img, .about-portrait img, .story-img img{
   width:100%; height:100%; object-fit:cover; display:block;
 }
@@ -276,7 +279,7 @@ em{
   font-size:clamp(2.2rem, 5vw, 4rem);
   text-wrap:balance; max-width:16ch;
 }
-.section-title em{ font-weight:400; }
+.section-title em{ font-weight:500; }
 .section-intro{
   color:var(--ink-60); max-width:34ch; font-size:1.05rem;
   text-align:right;

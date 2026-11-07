@@ -229,6 +229,12 @@ em{
   font-size:.85rem; font-weight:600; letter-spacing:.14em; text-transform:uppercase;
 }
 
+/* ── Real images in frames ──────────────────────────────── */
+.hero-card img, .work-frame img, .about-portrait img, .story-img img{
+  width:100%; height:100%; object-fit:cover; display:block;
+}
+.story-img-tall{ aspect-ratio:3/3.4; }
+
 /* ── Press strip ────────────────────────────────────────── */
 .press-strip{
   display:flex; align-items:center; gap:clamp(18px, 3vw, 40px);

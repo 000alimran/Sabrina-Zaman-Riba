@@ -75,7 +75,7 @@ def shell(title, desc, current, content, og_img="about.jpg"):
 
 
 BRANDS = {
- "Brands": ["Aarong","Robi","Airtel","Teletalk","Sunsilk","Pond's","Lux","Veet","Surf Excel","Dabur Amla","VIVO","Yamaha","Vision","Shwapno","RISE","QRIUS","Sailor","Merlot","Kay Kraft","Anjan's","Texmart","Red Origin","Mbrella","Cats Eye","Twelve","Karpas","ALMIRA","Sadakalo","Khan Brothers","Tribeni","CANVAS","Grandeur","El Zein","Banthai","Amber Lifestyle","Orion Footwear","Rang Bangladesh"],
+ "Brands": ["Aarong","Taaga","Robi","Airtel","Teletalk","Sunsilk","Pond's","Lux","Veet","Surf Excel","Dabur Amla","VIVO","Yamaha","Vision","Shwapno","RISE","QRIUS","Sailor","Merlot","Kay Kraft","Anjan's","Texmart","Red Origin","Mbrella","Cats Eye","Twelve","Karpas","ALMIRA","Sadakalo","Khan Brothers","Tribeni","CANVAS","Grandeur","El Zein","Banthai","Amber Lifestyle","Orion Footwear","Rang Bangladesh"],
  "Designers & couture": ["Masterpiece by Masheerah Hasan","Viola by Fariha","Mayasir by Maheen Khan","HERSORY by Aarong","Glamarts","Tangail Saree Kuthir","Sandalina"],
  "On screen & in print": ["Prothom Alo — Naksha","The Daily Star","Channel i","ATN Bangla","NTV","Rtv","Maasranga Television","SA TV","ETV","ICETODAY"],
  "Runways & shows": ["Aarong Fashion Show","Rtv Lux Bridal Festival","Sunsilk ATH Show","Muslin Festival","WE — for fashion runway","Pond's Lustrous Runway","British Council show","SAARC fashion show"],

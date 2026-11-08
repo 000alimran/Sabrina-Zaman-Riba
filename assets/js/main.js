@@ -78,7 +78,8 @@
       '.camp-list li, .press-list li, .story, .pull-quote, .cta-band, ' +
       '.about-copy, .about-portrait, .fact-list, .comp-toggle, .comp-grid > div, ' +
       '.num-grid > div, .platform-rows li, .faq-list details, .timeline li, ' +
-      '.booking-copy, .booking-form, .hero-stats > div, .tile-row a'
+      '.booking-copy, .booking-form, .hero-stats > div, .tile-row a, ' +
+      '.album-card, .masonry-item, .album-facts, .album-pager, .bw-group, .archive-strip li'
     );
     targets.forEach((el) => {
       gsap.fromTo(el, { y: 26, opacity: 0 }, {
@@ -137,7 +138,7 @@
   const empty = document.getElementById('workEmpty');
   function applyFilter(cat) {
     if (!grid) return;
-    const items = grid.querySelectorAll('.work-item');
+    const items = grid.querySelectorAll(':scope > [data-cat]');
     filters.forEach((b) => b.classList.toggle('is-active', b.dataset.filter === cat));
     const doFlip = hasGsap && !reduced && typeof Flip !== 'undefined';
     const state = doFlip ? Flip.getState(items) : null;

@@ -53,3 +53,16 @@ Dashboard → **Workers & Pages → Create → Pages → Connect to Git** → pi
 Framework preset: **None** · Build command: *(empty)* · Output directory: `/`
 
 Every push to `main` auto-deploys. Temporary URL: `<project>.pages.dev`.
+
+## Albums (v6)
+
+Album content is data-driven:
+
+- `data/albums.json` — titles, categories, cover pick, Facebook album id/count, copy
+- `assets/img/albums/<key>/NN.jpg` (full, ≤1600px) + `NN-t.jpg` (thumb, ≤700px)
+- `python3 tools/build_albums.py` → regenerates `albums.html` + `album-<key>.html`
+- `python3 tools/build_pages.py` → regenerates about/work/media-kit/press/contact/404
+  (brand wall names live in `BRANDS` inside that file)
+
+This JSON is the seam for the future dashboard: a CMS/D1 table with the same
+fields can replace the file without touching the templates.
